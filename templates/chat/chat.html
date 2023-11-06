@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load sass_tags %}
+{% load static %}
+{% block stylesheet %}{% sass_src  'css/chat/chat.scss' %}{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row no-gutters">
+	  <div class="col-md-4 border-right">
+		<div class="settings-tray">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/filip.jpg" alt="Profile img">
+		  <span class="settings-tray--right">
+			<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+			  </svg></a>
+			<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+				<path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+			  </svg></a>
+			<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+				<path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+			  </svg></a>
+		  </span>
+		</div>
+		<div class="search-box">
+		  <div class="input-wrapper">
+			<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+			  </svg></a>
+			<input placeholder="Search here" type="text">
+		  </div>
+		</div>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg" alt="">
+		  <div class="text">
+			<h6>Robo Cop</h6>
+			<p class="text-muted">Hey, you're arrested!</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/optimus-prime.jpeg" alt="">
+		  <div class="text">
+			<h6>Optimus</h6>
+			<p class="text-muted">Wanna grab a beer?</p>
+		  </div>
+		  <span class="time text-muted small">00:32</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover ">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png" alt="">
+		  <div class="text">
+			<h6>Skynet</h6>
+			<p class="text-muted">Seen that canned piece of s?</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/termy.jpg" alt="">
+		  <div class="text">
+			<h6>Termy</h6>
+			<p class="text-muted">Im studying spanish...</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/rick.jpg" alt="">
+		  <div class="text">
+			<h6>Richard</h6>
+			<p class="text-muted">I'm not sure...</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+		<hr>
+		<div class="friend-drawer friend-drawer--onhover">
+		  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/rachel.jpeg" alt="">
+		  <div class="text">
+			<h6>XXXXX</h6>
+			<p class="text-muted">Hi, wanna see something?</p>
+		  </div>
+		  <span class="time text-muted small">13:21</span>
+		</div>
+	  </div>
+	  <div class="col-md-8">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+			<img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg" alt="">
+			<div class="text">
+			  <h6>Robo Cop</h6>
+			  <p class="text-muted">Layin' down the law since like before Christ...</p>
+			</div>
+			<span class="settings-tray--right">
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+				  </svg></a>
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+					<path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+				  </svg></a>
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+					<path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+				  </svg></a>
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3">
+			  <div class="chat-bubble chat-bubble--left">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row no-gutters">
+			<div class="col-md-3 offset-md-9">
+			  <div class="chat-bubble chat-bubble--right">
+				Hello dude!
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				<input type="text" placeholder="Type your message here...">
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+					<path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+					<path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+				  </svg></a>
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+					<path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+				  </svg></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+<script src={% static 'js/chat/chat.js' %}>
+ {% endblock content  %}
